@@ -1,0 +1,49 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <title>test300</title>
+<link rel="stylesheet" href="./dist/jquery.convform.css">
+<script src="./dist/jquery.convform.js"></script>
+<script src="../js/jquery-3.1.1.min.js">
+
+</script>
+<script src="../js/custom.js">
+    
+</script>
+</head>
+<body>
+<!-- chatbot-->
+    <div class="chat_icon">
+        <i class="fa-regular fa-comments" aria-hidden="true">Go</i>
+
+	</div>
+    <div class="chat_boxe">
+        <div id="chat" class="conv-form-wrapper">
+        <form action="" method="GET">
+            <select name="programmer" data-conv-question="So, are you a programmer? (this question will fork the conversation based on your answer)">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            <div data-conv-fork="programmer">
+                <div data-conv-case="yes">
+                     <input type="text" data-conv-question="A fellow programmer! Cool." data-no-answer="true">
+                </div>
+                <div data-conv-case="no">
+                    <select name="thought" data-conv-question="Have you ever thought about learning? Programming is fun!">
+                        <option value="yes">oui</option>
+                        <option value="no">No..</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    </div>
+<!-- chatbo fin-->
+</body>
+</html>
